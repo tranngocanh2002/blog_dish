@@ -109,6 +109,7 @@ if (isset($_SESSION['user'])) {
                         </p>
                     </a>
                 </li>
+                <?php if ($_SESSION['user']['id'] == 0):?>
                 <li class="nav-item has-treeview">
                     <a href="" class="nav-link <?php echo $check_user?>">
                         <!-- <i class="nav-icon fas fa-copy"></i> -->
@@ -133,6 +134,7 @@ if (isset($_SESSION['user'])) {
                         </li>
                     </ul>
                 </li>
+                <?php endif;?>
             </ul>
         </nav>
     </div>
